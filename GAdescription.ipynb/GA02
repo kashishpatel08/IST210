@@ -1,0 +1,65 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "GAdescription.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyMY+6Wg/jesDt5Bf0I7cy2D",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/kashishpatel08/IST210/blob/master/GAdescription.ipynb/GA02\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "-I_Be0dqAGmf",
+        "colab_type": "text"
+      },
+      "source": [
+        "**Assumptions**:\n",
+        "\n",
+        "1 staff member per event\n",
+        "\n",
+        "1 book per checkout transaction\n",
+        "\n",
+        "Library only has 1 copy of each book\n",
+        "\n",
+        "Based off a day-to-day time frame comparison\n",
+        "\n",
+        "Our group focused on implementation of a library for our ER diagram design. Our group decided to construct our ER Diagram timeline on a day-to-day time frame, meaning that our cardinality reflects the number of operations possible per day. In addition to this, we also made several assumptions in order to streamline the database and improve ease of usage. We assumed each event would only be headed by one staff member. Additionally, we only have one copy of each book. Finally, we configured our check-out/check-in system as processing books one at a time. However, this does not mean patrons are unable to checkout multiple books at once — the system just processes these one at a time.\n",
+        "\n",
+        "\n",
+        " Individual staff members are each able to organize up to three events per day, where only one staff member is assigned per event. One staff member is involved with each check-out transaction, and can perform up to 300 during the day. A single library member can make up to 15 check-out transactions per day consisting of one book per transaction. Once a library member has enjoyed their books, the library provides a member the ability to make up to 20 check-in transactions per day. Each check-in transaction returns one book. \n",
+        "Most tables contain simple attributes of the item itself, however, we would like to further explain the check-out/check-in system as well as the late system in further detail. \n",
+        "\n",
+        "They have a price attribute in books which if the book is lost is must be repaid. Late fees is based off of a standard late fee multiplied by the current date - dueDate, if book overdue.\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "GaEFGVEhB49T",
+        "colab_type": "text"
+      },
+      "source": [
+        "![alt text](https://raw.githubusercontent.com/kashishpatel08/IST210/master/GA02/Library.png)"
+      ]
+    }
+  ]
+}
